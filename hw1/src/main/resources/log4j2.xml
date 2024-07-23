@@ -4,7 +4,7 @@
         <RollingFile name="RollingFile" fileName="logs/initial.log" filePattern="logs/Timer.%d{yyyy-MM-dd}.%i.log">
             <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
             <Policies>
-                <SizeBasedTriggeringPolicy size="1mb"/>
+                <SizeBasedTriggeringPolicy size="1MB"/>
                 <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
             </Policies>
             <DefaultRolloverStrategy max="5" fileIndex="min">
