@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Subscriber Form</title>
+</head>
+<body>
+<h1>Subscriber Form</h1>
+<form th:action="@{/subscriber}" th:object="${subscriber}" method="post">
+    <label for="subscName">First Name:</label>
+    <input type="text" id="subscName" th:field="*{subscName}" /><br/>
+
+    <label for="subscSurname">Last Name:</label>
+    <input type="text" id="subscSurname" th:field="*{subscSurname}" /><br/>
+
+    <label for="msisdn">MSISDN:</label>
+    <input type="text" id="msisdn" th:field="*{msisdn}" /><br/>
+
+    <label for="tariffId">Tariff ID:</label>
+    <input type="text" id="tariffId" th:field="*{tariffId}" /><br/>
+
+    <label for="startDate">Start Date:</label>
+    <input type="date" id="startDate" th:field="*{startDate}" /><br/>
+
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
