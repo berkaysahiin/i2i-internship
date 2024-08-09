@@ -1,0 +1,36 @@
+Here's the updated documentation with additional context:
+VoltDbWrapper Class
+
+    VoltDbWrapper(): Initializes a connection to the VoltDB instance using the specified IP and port.
+
+    getID(long MSISDN): Retrieves the CUST_ID associated with the given MSISDN (customer's phone number).
+
+    getPackageInternet(long MSISDN): Retrieves the total data allocation from the package associated with the given MSISDN (customer's phone number).
+
+    getPackageSms(long MSISDN): Retrieves the total SMS allocation from the package associated with the given MSISDN (customer's phone number).
+
+    getPackageMinutes(long MSISDN): Retrieves the total minutes allocation from the package associated with the given MSISDN (customer's phone number).
+
+    getPackagePeriod(long MSISDN): Retrieves the duration (in days) of the package associated with the given MSISDN (customer's phone number).
+
+    getPackagePrice(long MSISDN): Retrieves the price of the package associated with the given MSISDN (customer's phone number).
+
+    getPackageName(long MSISDN): Retrieves the name of the package associated with the given MSISDN (customer's phone number).
+
+    getInternetBalance(long MSISDN): Retrieves the remaining internet balance from the balance table for the given MSISDN (customer's phone number).
+
+    getMinutesBalance(long MSISDN): Retrieves the remaining minutes balance from the balance table for the given MSISDN (customer's phone number).
+
+    getSmsBalance(long MSISDN): Retrieves the remaining SMS balance from the balance table for the given MSISDN (customer's phone number).
+
+    getMoneyBalance(long MSISDN): Retrieves the remaining monetary balance from the balance table for the given MSISDN (customer's phone number).
+
+    setMinutesBalance(int amount_minutes, long MSISDN): Updates the remaining minutes balance in the balance table for the given MSISDN (customer's phone number) with the specified amount.
+
+    setInternetBalance(int amount_internet, long MSISDN): Updates the remaining internet balance in the balance table for the given MSISDN (customer's phone number) with the specified amount.
+
+    setSmsBalance(int amount_sms, long MSISDN): Updates the remaining SMS balance in the balance table for the given MSISDN (customer's phone number) with the specified amount.
+
+    setMoneyBalance(int amount_money, long MSISDN): Updates the remaining monetary balance in the balance table for the given MSISDN (customer's phone number) with the specified amount.
+
+    checkResponse(ClientResponse response): Verifies if the response from VoltDB indicates success and that there is at least one row in the result set.
