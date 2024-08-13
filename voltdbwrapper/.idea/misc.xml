@@ -6,6 +6,7 @@
       <list>
         <option value="$PROJECT_DIR$/demos-main/voltdb_evrencell/pom.xml" />
         <option value="$PROJECT_DIR$/main/voltdb_pixcell/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
